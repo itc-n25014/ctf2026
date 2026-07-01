@@ -1,13 +1,13 @@
-#ftpサーバインストールマニュアル
+# ftpサーバインストールマニュアル
 
-##　１．vsftpdをインストールする
+## １．vsftpdをインストールする
 
 ```bash
 sudo apt update
 sudo apt install vsftpd -y
 ```
 
-##　２．起動しているか確認する
+## ２．起動しているか確認する
 
 ```bash
 sudo systemct status vsftpd
@@ -15,7 +15,7 @@ sudo systemct status vsftpd
 
 active (running)　が表示されているか確認
 
-##　３．設定ファイルを編集する
+## ３．設定ファイルを編集する
 
 ```bash
 sudo nano /etc/vsftpd.conf
@@ -25,13 +25,13 @@ local_enable=YES
 write_enable=YES
 ```
 
-##　４．IPアドレスを確認する
+## ４．IPアドレスを確認する
 
 ```bash
 ip a
 ```
 
-##　５．FTPサーバへ接続する
+## ５．FTPサーバへ接続する
 
 ```bash
 ftp <IPアドレス>
@@ -49,7 +49,7 @@ vagrant
 vagrant
 ```
 
-#　６．接続の確認
+## ６．接続の確認
 
 ```bash
 ftp localhost
