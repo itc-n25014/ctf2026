@@ -1,13 +1,13 @@
-## telnetサーバインストールマニュアル
+# telnetサーバインストールマニュアル
 
-# １．xinetdとtelnetdをインストールする
+## １．xinetdとtelnetdをインストールする
 
 ```bash
 sudo apt update
 sudo apt install xinetd telnetd -y
 ```
 
-# ２．xinetd用の設定ファイルを作成する
+## ２．xinetd用の設定ファイルを作成する
 
 ```bash
 sudo nano /etc/xinetd.d/telnet
@@ -26,20 +26,20 @@ service telnet
 }
 ```
 
-# ３．xinetdサービスを起動・再起動する
+## ３．xinetdサービスを起動・再起動する
 
 ```bash
 sudo systemctl restart xinetd
 sudo systemctl status xinetd
 ```
 
-# ４．IPアドレスを確認する
+## ４．IPアドレスを確認する
 
 ```bash
 ip a
 ```
 
-# ５. Telnetサーバへ接続する
+## ５. Telnetサーバへ接続する
 
 ```bash
 telnet <IPアドレス>
