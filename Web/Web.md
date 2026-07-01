@@ -37,14 +37,14 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 </Directory>
 ```
 
-# ６．設定を反映させる
+## ６．設定を反映させる
 
 ```bash
 sudo apache2ctl configtest
 sudo systemctl restart apache2
 ```
 
-# ７．動作確認
+## ７．動作確認
 
 ```bash
 ip a
